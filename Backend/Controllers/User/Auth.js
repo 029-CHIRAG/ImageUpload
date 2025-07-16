@@ -62,7 +62,7 @@ exports.logIn = async (req, res) => {
 
         const options = {
             httpOnly: true,
-            secure: true, // set to false on localhost if needed
+            secure: true, 
         };
 
         const loggedinUser = await User.findById(user._id).select("-password");

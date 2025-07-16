@@ -11,7 +11,9 @@ app.use(express.json());
 //Routes Mounting
 
 const UserRouter=require('./Routes/User.router.js');
+const PostRouter=require('./Routes/Post.router.js');
 app.use('/api/v1',UserRouter);
+app.use('/api/v1',PostRouter);
 
 
 
